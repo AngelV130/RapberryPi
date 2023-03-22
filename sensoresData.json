@@ -1,0 +1,216 @@
+[
+    {
+        "type": "corriente",
+        "value": " -29 A",
+        "fecha_creacion": "2023-03-21 14:43:20.961317",
+        "sensor": {
+            "_id": "1",
+            "nombre": "Corriene",
+            "tipo": "corriente",
+            "ubicacion": "Suelo",
+            "descripcion": "detecta corriente",
+            "fecha_creacion": "2023-03-14 15:00:37.923073"
+        }
+    },
+    {
+        "type": "sonido",
+        "value": " 1007",
+        "fecha_creacion": "2023-03-21 14:43:26.955647",
+        "sensor": {
+            "_id": "2",
+            "nombre": "Sonido",
+            "tipo": "sonido",
+            "ubicacion": "pared",
+            "descripcion": "detecta sonido",
+            "fecha_creacion": "2023-03-14 15:01:11.633792"
+        }
+    },
+    {
+        "type": "flama",
+        "value": " 1",
+        "fecha_creacion": "2023-03-21 14:43:29.978284",
+        "sensor": {
+            "_id": "33",
+            "nombre": "Flama",
+            "tipo": "flama",
+            "ubicacion": "techo",
+            "descripcion": "detecta flama",
+            "fecha_creacion": "2023-03-14 15:01:50.062639"
+        }
+    },
+    {
+        "type": "luz",
+        "value": " 325",
+        "fecha_creacion": "2023-03-21 14:43:31.977983",
+        "sensor": {
+            "_id": "4",
+            "nombre": "Luz",
+            "tipo": "luz",
+            "ubicacion": "techo",
+            "descripcion": "detecta luz",
+            "fecha_creacion": "2023-03-14 15:02:11.603366"
+        }
+    },
+    {
+        "type": "humo",
+        "value": " 0",
+        "fecha_creacion": "2023-03-21 14:43:39.002121",
+        "sensor": {
+            "_id": "5",
+            "nombre": "Humo",
+            "tipo": "humo",
+            "ubicacion": "techo",
+            "descripcion": "detecta humo",
+            "fecha_creacion": "2023-03-14 15:02:54.019651"
+        }
+    },
+    {
+        "type": "presencia",
+        "value": " 0",
+        "fecha_creacion": "2023-03-21 14:43:42.007862",
+        "sensor": {
+            "_id": "6",
+            "nombre": "precensia",
+            "tipo": "presencia",
+            "ubicacion": "pared",
+            "descripcion": "detecta presencia",
+            "fecha_creacion": "2023-03-14 15:03:18.632237"
+        }
+    },
+    {
+        "type": "temperatura",
+        "values": [
+            " 23.40",
+            "39.00"
+        ],
+        "fecha_creacion": "2023-03-21 14:43:44.018007",
+        "sensor": {
+            "_id": "7",
+            "nombre": "Temperatra y Humedad",
+            "tipo": "temperatura",
+            "ubicacion": "techo",
+            "descripcion": "detecta la temperatura",
+            "fecha_creacion": "2023-03-14 15:04:07.796917"
+        }
+    },
+    {
+        "type": "magnetico",
+        "value": " 1",
+        "fecha_creacion": "2023-03-21 14:43:49.032826",
+        "sensor": {
+            "_id": "8",
+            "nombre": "magnetico",
+            "tipo": "magnetico",
+            "ubicacion": "techo",
+            "descripcion": "detecta magnetismo",
+            "fecha_creacion": "2023-03-14 15:04:33.053492"
+        }
+    },
+    {
+        "type": "corriente",
+        "value": " -30 A",
+        "fecha_creacion": "2023-03-21 14:46:40.253439",
+        "sensor": {
+            "_id": "1",
+            "nombre": "Corriene",
+            "tipo": "corriente",
+            "ubicacion": "Suelo",
+            "descripcion": "detecta corriente",
+            "fecha_creacion": "2023-03-14 15:00:37.923073"
+        }
+    },
+    {
+        "type": "sonido",
+        "value": " 58",
+        "fecha_creacion": "2023-03-21 14:46:46.247426",
+        "sensor": {
+            "_id": "2",
+            "nombre": "Sonido",
+            "tipo": "sonido",
+            "ubicacion": "pared",
+            "descripcion": "detecta sonido",
+            "fecha_creacion": "2023-03-14 15:01:11.633792"
+        }
+    },
+    {
+        "type": "flama",
+        "value": " 1",
+        "fecha_creacion": "2023-03-21 14:46:49.269976",
+        "sensor": {
+            "_id": "33",
+            "nombre": "Flama",
+            "tipo": "flama",
+            "ubicacion": "techo",
+            "descripcion": "detecta flama",
+            "fecha_creacion": "2023-03-14 15:01:50.062639"
+        }
+    },
+    {
+        "type": "luz",
+        "value": " 427",
+        "fecha_creacion": "2023-03-21 14:46:51.268790",
+        "sensor": {
+            "_id": "4",
+            "nombre": "Luz",
+            "tipo": "luz",
+            "ubicacion": "techo",
+            "descripcion": "detecta luz",
+            "fecha_creacion": "2023-03-14 15:02:11.603366"
+        }
+    },
+    {
+        "type": "humo",
+        "value": " 1",
+        "fecha_creacion": "2023-03-21 14:46:58.293476",
+        "sensor": {
+            "_id": "5",
+            "nombre": "Humo",
+            "tipo": "humo",
+            "ubicacion": "techo",
+            "descripcion": "detecta humo",
+            "fecha_creacion": "2023-03-14 15:02:54.019651"
+        }
+    },
+    {
+        "type": "presencia",
+        "value": " 0",
+        "fecha_creacion": "2023-03-21 14:47:01.300695",
+        "sensor": {
+            "_id": "6",
+            "nombre": "precensia",
+            "tipo": "presencia",
+            "ubicacion": "pared",
+            "descripcion": "detecta presencia",
+            "fecha_creacion": "2023-03-14 15:03:18.632237"
+        }
+    },
+    {
+        "type": "temperatura",
+        "values": [
+            " 24.60",
+            "37.00"
+        ],
+        "fecha_creacion": "2023-03-21 14:47:03.312100",
+        "sensor": {
+            "_id": "7",
+            "nombre": "Temperatra y Humedad",
+            "tipo": "temperatura",
+            "ubicacion": "techo",
+            "descripcion": "detecta la temperatura",
+            "fecha_creacion": "2023-03-14 15:04:07.796917"
+        }
+    },
+    {
+        "type": "magnetico",
+        "value": " 1",
+        "fecha_creacion": "2023-03-21 14:47:08.326864",
+        "sensor": {
+            "_id": "8",
+            "nombre": "magnetico",
+            "tipo": "magnetico",
+            "ubicacion": "techo",
+            "descripcion": "detecta magnetismo",
+            "fecha_creacion": "2023-03-14 15:04:33.053492"
+        }
+    }
+]

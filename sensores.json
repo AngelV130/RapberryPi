@@ -1,0 +1,81 @@
+[
+    {
+        "_id": "1",
+        "nombre": "Corriene",
+        "tipo": "corriente",
+        "ubicacion": "Suelo",
+        "descripcion": "detecta corriente",
+        "fecha_creacion": "2023-03-14 15:00:37.923073"
+    },
+    {
+        "_id": "2",
+        "nombre": "Sonido",
+        "tipo": "sonido",
+        "ubicacion": "pared",
+        "descripcion": "detecta sonido",
+        "fecha_creacion": "2023-03-14 15:01:11.633792"
+    },
+    {
+        "_id": "33",
+        "nombre": "Flama",
+        "tipo": "flama",
+        "ubicacion": "techo",
+        "descripcion": "detecta flama",
+        "fecha_creacion": "2023-03-14 15:01:50.062639"
+    },
+    {
+        "_id": "4",
+        "nombre": "Luz",
+        "tipo": "luz",
+        "ubicacion": "techo",
+        "descripcion": "detecta luz",
+        "fecha_creacion": "2023-03-14 15:02:11.603366"
+    },
+    {
+        "_id": "5",
+        "nombre": "Humo",
+        "tipo": "humo",
+        "ubicacion": "techo",
+        "descripcion": "detecta humo",
+        "fecha_creacion": "2023-03-14 15:02:54.019651"
+    },
+    {
+        "_id": "6",
+        "nombre": "precensia",
+        "tipo": "presencia",
+        "ubicacion": "pared",
+        "descripcion": "detecta presencia",
+        "fecha_creacion": "2023-03-14 15:03:18.632237"
+    },
+    {
+        "_id": "7",
+        "nombre": "Temperatra y Humedad",
+        "tipo": "temperatura",
+        "ubicacion": "techo",
+        "descripcion": "detecta la temperatura",
+        "fecha_creacion": "2023-03-14 15:04:07.796917",
+        "pines": [
+            15
+        ]
+    },
+    {
+        "_id": "8",
+        "nombre": "magnetico",
+        "tipo": "magnetico",
+        "ubicacion": "techo",
+        "descripcion": "detecta magnetismo",
+        "fecha_creacion": "2023-03-14 15:04:33.053492"
+    },
+    {
+        "_id": "9",
+        "nombre": "Ultrasonico",
+        "tipo": "ultrasonico",
+        "pines": [
+            12,
+            13
+        ],
+        "ubicacion": "nose",
+        "descripcion": "Nose",
+        "fecha_creacion": "2023-03-22 15:12:22.893603"
+    }
+]
