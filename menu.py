@@ -69,7 +69,7 @@ class Menu:
             return self._tipoSensor()
     def leerDatos(self):
         Sensor.mandarDatos()
-        Sensor.leerSensor()
+        Sensor.leerRaspberryPi()
     def subirDatos(self):
         Sensor.mandarDatos(15);
     def cargarSensores(self):
