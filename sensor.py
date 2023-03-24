@@ -108,6 +108,8 @@ class Sensor:
                 lista.agregar(dato);
         for sensor in sensores:
             if sensor['tipo'] == 'ultrasonico':
+                
+                
                 GPIO.setwarnings(False)
                 TRIG = sensor['pines'][0] #Variable que contiene el GPIO al cual conectamos la señal TRIG del sensor
                 ECHO = sensor['pines'][1] #Variable que contiene el GPIO al cual conectamos la señal ECHO del sensor
