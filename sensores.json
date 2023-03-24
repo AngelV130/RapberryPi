@@ -55,7 +55,7 @@
         "descripcion": "detecta la temperatura",
         "fecha_creacion": "2023-03-14 15:04:07.796917",
         "pines": [
-            15
+            22
         ]
     },
     {
@@ -71,8 +71,8 @@
         "nombre": "Ultrasonico",
         "tipo": "ultrasonico",
         "pines": [
-            12,
-            13
+            23,
+            24
         ],
         "ubicacion": "nose",
         "descripcion": "Nose",

@@ -17,6 +17,7 @@ class Sensor:
         self.descripcion = descripcion
         self.fecha_creacion = fecha_creacion
     @staticmethod
+    
     def leerSensor():
         json = Json('sensores.json')
         sensores = json.cargar()
@@ -51,7 +52,8 @@ class Sensor:
                     else:
                         print('Opcion no detectada!....')
                         break;
-    @staticmethod    
+    @staticmethod   
+     
     def mandarDatos(diferencia_en_minutos = 0):
         datos = Json('sensoresData.json')
         if datos.cargar() != []:
@@ -91,11 +93,14 @@ class Sensor:
         conexion = ConexionMongo('Sensores','senosresInfo')
         file.guardar(conexion.traerDatos())
     @staticmethod
+    
     def leerRaspberryPi():
         json = Json('sensores.json')
         sensores = json.cargar()
+        
         if len(sensores) < 1:
             return print("no hay sensores para leer")
+        
         lista = Lista("sensoresData.json")
         dataLocal = lista.cargar()
         if dataLocal != []:
@@ -103,6 +108,9 @@ class Sensor:
                 lista.agregar(dato);
         for sensor in sensores:
             if sensor['tipo'] == 'ultrasonico':
+                
+                
+                GPIO.setwarnings(False)
                 TRIG = sensor['pines'][0] #Variable que contiene el GPIO al cual conectamos la señal TRIG del sensor
                 ECHO = sensor['pines'][1] #Variable que contiene el GPIO al cual conectamos la señal ECHO del sensor
                 print(ECHO,TRIG)
