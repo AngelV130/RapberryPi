@@ -108,12 +108,12 @@ class Sensor:
                 lista.agregar(dato);
         for sensor in sensores:
             if sensor['tipo'] == 'ultrasonico':
+                GPIO.setwarnings(False)
                 TRIG = sensor['pines'][0] #Variable que contiene el GPIO al cual conectamos la señal TRIG del sensor
                 ECHO = sensor['pines'][1] #Variable que contiene el GPIO al cual conectamos la señal ECHO del sensor
                 GPIO.setmode(GPIO.BCM)     #Establecemos el modo según el cual nos refiriremos a los GPIO de nuestra RPi            
                 GPIO.setup(TRIG, GPIO.OUT) #Configuramos el pin TRIG como una salida 
                 GPIO.setup(ECHO, GPIO.IN)  #Configuramos el pin ECHO como una salida 
-                GPIO.setwarnings(False)
                 #Contenemos el código principal en un aestructura try para limpiar los GPIO al terminar o presentarse un error
                 try:
                     #Implementamos un loop infinito
