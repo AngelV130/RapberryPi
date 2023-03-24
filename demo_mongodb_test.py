@@ -47,5 +47,5 @@ class ConexionMongo:
 
 #fecha = datetime(day=datetime.now().day,month=datetime.now().month,year=datetime.now().year,hour=datetime.now().hour,minute=datetime.now().minute,second=datetime.now().second);
 #mongo = ConexionMongo("ejemplo_proyecto","ejemplo");
-#add = {"_id":130,"nombre":"nom2","fecha":fecha}
+#add = {"_id":13000000,"nombre":"nom2","fecha":{'hola':"hola"}}
 #mongo.agregarCollection(add);
