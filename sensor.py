@@ -17,6 +17,7 @@ class Sensor:
         self.descripcion = descripcion
         self.fecha_creacion = fecha_creacion
     @staticmethod
+    
     def leerSensor():
         json = Json('sensores.json')
         sensores = json.cargar()
@@ -51,7 +52,8 @@ class Sensor:
                     else:
                         print('Opcion no detectada!....')
                         break;
-    @staticmethod    
+    @staticmethod   
+     
     def mandarDatos(diferencia_en_minutos = 0):
         datos = Json('sensoresData.json')
         if datos.cargar() != []:
@@ -91,11 +93,14 @@ class Sensor:
         conexion = ConexionMongo('Sensores','senosresInfo')
         file.guardar(conexion.traerDatos())
     @staticmethod
+    
     def leerRaspberryPi():
         json = Json('sensores.json')
         sensores = json.cargar()
+        
         if len(sensores) < 1:
             return print("no hay sensores para leer")
+        
         lista = Lista("sensoresData.json")
         dataLocal = lista.cargar()
         if dataLocal != []:
@@ -108,6 +113,7 @@ class Sensor:
                 GPIO.setmode(GPIO.BCM)     #Establecemos el modo según el cual nos refiriremos a los GPIO de nuestra RPi            
                 GPIO.setup(TRIG, GPIO.OUT) #Configuramos el pin TRIG como una salida 
                 GPIO.setup(ECHO, GPIO.IN)  #Configuramos el pin ECHO como una salida 
+                GPIO.setwarnings(False)
                 #Contenemos el código principal en un aestructura try para limpiar los GPIO al terminar o presentarse un error
                 try:
                     #Implementamos un loop infinito
