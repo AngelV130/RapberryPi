@@ -164,7 +164,7 @@ class Sensor:
                     sensorData = {"type":'temperatura',"value":[temperatura, humedad],"fecha_creacion":str(datetime.now()),"sensor":sensor}
                     lista.agregar(sensorData)
                     break; #Cada segundo se evalúa el sensor
-        lista.cargar(lista.lista);
+        lista.guardar(lista.lista);
 
 
 
