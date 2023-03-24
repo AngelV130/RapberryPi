@@ -53,7 +53,6 @@ class Sensor:
                         print('Opcion no detectada!....')
                         break;
     @staticmethod   
-     
     def mandarDatos(diferencia_en_minutos = 0):
         datos = Json('sensoresData.json')
         if datos.cargar() != []:
@@ -66,11 +65,14 @@ class Sensor:
             if diferencia_en_minutos >= 15.0:
                 conexion = ConexionMongo("Sensores","sensoresDatos")
                 if conexion.verificacion:
+                    if datos.cargar('sensoresDatRespaldo.json') != []:
+                        conexion.agregarCollection(datos.cargar('sensoresDatRespaldo.json'))
+                        datos.limpiar('sensoresDatRespaldo.json');
                     conexion.agregarCollection(datos.cargar())
                     datos.limpiar('sensoresData.json');
                     conexion.cerrarConexion()
                 else:
-                    datos.guardar(datos.cargar(),'sensoresDatRespaldo')
+                    datos.guardar(datos.cargar(),'sensoresDatRespaldo.json')
                     datos.limpiar('sensoresData.json');
             else:
                 print(diferencia_en_minutos)
