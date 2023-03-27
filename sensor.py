@@ -4,8 +4,8 @@ from datetime import datetime
 from myjson import Json
 #import serial
 import time
-#import RPi.GPIO as GPIO
-#import Adafruit_DHT
+import RPi.GPIO as GPIO
+import Adafruit_DHT
 
 class Sensor:
     def __init__(self,_id,nombre,tipo,ubicacion,descripcion,fecha_creacion,pines) :

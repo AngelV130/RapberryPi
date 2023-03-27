@@ -74,8 +74,8 @@
             23,
             24
         ],
-        "ubicacion": "nose",
-        "descripcion": "Nose",
+        "ubicacion": "entrada",
+        "descripcion": "detecta distancias",
         "fecha_creacion": "2023-03-22 15:12:22.893603"
     }
 ]
