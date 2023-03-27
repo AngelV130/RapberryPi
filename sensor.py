@@ -4,8 +4,8 @@ from datetime import datetime
 from myjson import Json
 #import serial
 import time
-import RPi.GPIO as GPIO
-import Adafruit_DHT
+#import RPi.GPIO as GPIO
+#import Adafruit_DHT
 
 class Sensor:
     def __init__(self,_id,nombre,tipo,ubicacion,descripcion,fecha_creacion,pines) :
@@ -150,21 +150,23 @@ class Sensor:
                         # Imprimimos resultado
                         distan = "ultrasonico: %.2f cm" % distancia                        
                         data2 = distan.split(":")
-                        sensorData = {"type":data2[0],"value":data2[1],"fecha_creacion":str(datetime.now()),"sensor":sensor}
+                        sensorData = {"type":data2[0],"value":distancia,"fecha_creacion":str(datetime.now()),"sensor":sensor}
                         lista.agregar(sensorData)
                         print(distan);
                         break;
                 except:
                     GPIO.cleanup()
                     print("a ocurrido un problema")
-            if sensor['tipo'] == 'temperatura':
+            if sensor['tipo'] == "temperatura y humedad":
                 while True:
                     dht = Adafruit_DHT.DHT11 #Cambia por DHT22 y si usas dicho sensor
                     humedad, temperatura = Adafruit_DHT.read_retry(dht, sensor['pines'][0])
                     print ('Humedad: ' , format(humedad))
                     print ('Temperatura: ' , format(temperatura))
-                    sensorData = {"type":'temperatura',"value":[temperatura, humedad],"fecha_creacion":str(datetime.now()),"sensor":sensor}
+                    sensorData = {"type":'temperatura',"value":temperatura,"fecha_creacion":str(datetime.now()),"sensor":sensor}
+                    sensorData2 = {"type":'humedad',"value":humedad,"fecha_creacion":str(datetime.now()),"sensor":sensor}
                     lista.agregar(sensorData)
+                    lista.agregar(sensorData2)
                     break; #Cada segundo se evalúa el sensor
         lista.guardar(lista.lista);
     @staticmethod
