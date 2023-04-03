@@ -45,17 +45,17 @@ class Sensor:
                 if data2[0] == sensores[cont]['tipo']:
                     lista.agregar(sensorData)
                     cont+=1
-                    print("Vuelta ",cont)
-                    if(cont == len(sensores)):
-                        lista.guardar(lista.lista)
-                        op = input("Dese leer nuevamente los sensores? ('si','no' O 's','n')    ")
-                        if op == 'no' or op == 'n':
-                            break;
-                        elif op == 'si' or op == 's':
-                            cont = 0;
-                        else:
-                            print('Opcion no detectada!....')
-                            break;
+            print("Vuelta ",cont)
+            if(cont == len(sensores)):
+                lista.guardar(lista.lista)
+                op = input("Dese leer nuevamente los sensores? ('si','no' O 's','n')    ")
+                if op == 'no' or op == 'n':
+                    break;
+                elif op == 'si' or op == 's':
+                    cont = 0;
+                else:
+                    print('Opcion no detectada!....')
+                    break;
     @staticmethod   
     def mandarDatos(diferencia_en_minutos = 0):
         datos = Json('sensoresData.json')
