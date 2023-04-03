@@ -29,9 +29,9 @@ class Sensor:
         if dataLocal != []:
             for dato in dataLocal:
                 lista.agregar(dato);
-        puerto_serial = serial.Serial('COM3', 9600)
+        puerto_serial = serial.Serial('/dev/tty*', 9600)
         while True:
-            if sensores[cont][['tipo']] == 'temperatura y humedad':
+            if sensores[cont]['tipo'] == 'temperatura y humedad':
                 Sensor.leerRaspberryPi(sensores[cont]);
                 count = count + 1
             else:    
